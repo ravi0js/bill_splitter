@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Bill</h2>
+            <input type="text" id="billAmount" placeholder=" ₹ ">
+
+            <h2>Select Tip</h2>
+            <div class="tip-options"></div>
+
+            <input type="number" id="customTip" min="0" placeholder="Tip">
+            <h2>Number of People</h2>
+            <input type="text" id="numPeople" placeholder="People">
+
+            <button id="generateBill" onclick="calculateBill()">Generate Bill</button>
+        </div>
+
+        <div class="output">
+            <p>Tip amount <span id="tipAmount"> ₹0</span></p>
+            <p>Total <span id="totalAmount"> ₹0</span></p>
+            <p>Each Person Bill <span id="eachPersonBill"> ₹0</span></p>
+            <button id="resetBtn" onclick="resetCalculator()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
